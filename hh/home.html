@@ -1,0 +1,188 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <title>Speed ER Home</title>
+    </head>
+    <body id = "home">
+        <div id = "welcome">Welcome, George Saieed!</div>
+        <img id="settings" src = "img/settings.svg">
+        <div id = "drop-down">
+            <p class="drop-options"><a class="nounderline" href="home.html">Home</a></p>
+            <p class="drop-options"><a class="nounderline" href="profile.html">Profile</a></p>
+            <p class="drop-options"><a class="nounderline" href="login.html">Logout</a></p>
+        </div>
+        <br>
+        <div id = "da-cards" class="ma-card-2">
+            <div>
+                <div id="nearest-hospital" class = "home-card confirm-card">
+                    <p id="near-text-new" class="home-text">Please Go To:</p>
+                    <p id="hospital-name-new" class="home-text new-texts2">Loading...</p>
+                    <p id="hospital-address-new" class="home-text new-texts3"><a href="https://www.google.com/maps/dir//Children's+Hospital+of+Pittsburgh+of+UPMC,+4401+Penn+Ave,+Pittsburgh,+PA+15224/" target="_blank"></a></p>
+                    <p id="hospital-number-new" class="home-text new-texts4"><a href="tel:4126925325"></a></p>
+                    <p class="home-text hospital-wait-text">total min.</p>
+                    <p id = "label-wait1" class="home-text">miles</p>
+                    <p id= "label-wait2" class="home-text">travel (mins)</p>
+                    <p id="label-wait3" class="home-text">wait (mins)</p>
+                    <p id="dist-miles" class="home-text new-wait">...</p>
+                    <p id="dist-time" class="home-text new-wait">...</p>
+                    <p id="hosp-time" class="home-text new-wait">...</p>
+                    <p id="total-time" class="home-text new-wait">...</p>
+                    <div id="confirm-submit"><a class="nolink" href = "ertemplate.pdf"> VIEW REPORT</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id = "da-cards" class="ma-card-1">
+            <div>
+                <div id="injury-report" class = "home-card">
+                    <img id="injury-img" src="img/injury.svg">
+                    <p id="report-text" class="home-text">Report An Injury</p>
+                    <p></p>
+                </div>
+                <div id="nearest-hospital" class = "home-card">
+                    <p id="near-text" class="home-text">Nearest Hospital</p>
+                    <p id="hospital-name" class="home-text">Loading...</p>
+                    <p id="hospital-address" class="home-text"><a href="https://www.google.com/maps/dir//Children's+Hospital+of+Pittsburgh+of+UPMC,+4401+Penn+Ave,+Pittsburgh,+PA+15224/" target="_blank"></a></p>
+                    <p id="hospital-number" class="home-text"><a href="tel:4126925325"></a></p>
+                    <p id="hospital-wait-text" class="home-text">wait (mins)</p>
+                    <p id="hospital-wait" class="home-text">...</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function geoFindNearestHospitals() {
+                var dalats = "";
+                var dalongs = "";
+                if(!navigator.geolocation) {
+                    alert("not supported");
+                    return "geolocation isn't supported by your browser";
+                }
+
+                function success(position) {
+                    var finallat = position.coords.latitude;
+                    var finallong = position.coords.longitude;
+                    dalats = String(finallat);
+                    dalongs = String(finallong);
+                    var xhr = new XMLHttpRequest();
+                    var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+                    var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                    xhr.onreadystatechange = function() {
+                        if(xhr.readyState == XMLHttpRequest.DONE) {
+                            var response = JSON.parse(xhr.responseText);
+                            var place_id = response.results[0].place_id;
+                            
+                            var xhr2 = new XMLHttpRequest();
+                            var url2 = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + place_id + "&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                            xhr2.onreadystatechange = function() {
+                                if(xhr2.readyState == XMLHttpRequest.DONE) {
+                                    var response2 = JSON.parse(xhr2.responseText);
+                                    var name = response2.result.name;
+                                    var address = response2.result.formatted_address;
+                                    var phone = response2.result.formatted_phone_number;
+                                    var newphone = "";
+                                    for (var i = 0, len = phone.length; i < len; i++) {
+                                        if (phone[i] != "(" && phone[i] != ")" && phone[i] != " " && phone[i] != "-") {
+                                            newphone += phone[i];
+                                        }
+                                    }
+                                    document.getElementById('hospital-name').innerHTML = name;
+                                    document.getElementById('hospital-address').innerHTML = "<a href=\"https://www.google.com/maps/dir/"+ "My%20location" +"/"+address+"/\" target=\"_blank\">" + address + "</a>";
+                                    document.getElementById('hospital-number').innerHTML = "<a href=\"tel:"+newphone+"\">"+phone+"</a>";
+                                    document.getElementById('hospital-wait').innerHTML = "44";
+                                }
+                            }
+                            
+                            xhr2.open("GET", url2, true);
+                            xhr2.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                            xhr2.send(null);
+                        }	
+                    }
+                    xhr.open("GET", url + params, true);
+                    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                    xhr.send(null);
+                    
+                    
+                }
+                function error() {
+                    output = "Unable to retrieve your location";
+                };
+                
+                navigator.geolocation.getCurrentPosition(success, error);
+                
+            }
+            function geoFindNearestHospitals2() {
+                var dalats = "";
+                var dalongs = "";
+                if(!navigator.geolocation) {
+                    alert("not supported");
+                    return "geolocation isn't supported by your browser";
+                }
+
+                function success(position) {
+                    var finallat = position.coords.latitude;
+                    var finallong = position.coords.longitude;
+                    dalats = String(finallat);
+                    dalongs = String(finallong);
+                    var xhr = new XMLHttpRequest();
+                    var url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
+                    var params = "?location=" + dalats + "," + dalongs + "&rankby=distance&" + "type=hospital&keyword=hospital&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                    xhr.onreadystatechange = function() {
+                        if(xhr.readyState == XMLHttpRequest.DONE) {
+                            var response = JSON.parse(xhr.responseText);
+                            var place_id = response.results[0].place_id;
+                            
+                            var xhr2 = new XMLHttpRequest();
+                            var url2 = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + place_id + "&key=AIzaSyC5sRJ8pdNXNBL4W5IAEXEmLoTOeNU0Qyw";
+                            xhr2.onreadystatechange = function() {
+                                if(xhr2.readyState == XMLHttpRequest.DONE) {
+                                    var response2 = JSON.parse(xhr2.responseText);
+                                    var name = response2.result.name;
+                                    var address = response2.result.formatted_address;
+                                    var phone = response2.result.formatted_phone_number;
+                                    var newphone = "";
+                                    for (var i = 0, len = phone.length; i < len; i++) {
+                                        if (phone[i] != "(" && phone[i] != ")" && phone[i] != " " && phone[i] != "-") {
+                                            newphone += phone[i];
+                                        }
+                                    }
+                                    document.getElementById('hospital-name-new').innerHTML = name;
+                                    document.getElementById('hospital-address-new').innerHTML = "<a href=\"https://www.google.com/maps/dir/"+ "My%20location" +"/"+address+"/\" target=\"_blank\">" + address + "</a>";
+                                    document.getElementById('hospital-number-new').innerHTML = "<a href=\"tel:"+newphone+"\">"+phone+"</a>";
+                                    document.getElementById('dist-miles').innerHTML = "1.1";
+                                    document.getElementById('dist-time').innerHTML = "6";
+                                    document.getElementById('hosp-time').innerHTML = "44";
+                                    document.getElementById('total-time').innerHTML = "50";
+                                }
+                            }
+                            
+                            xhr2.open("GET", url2, true);
+                            xhr2.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                            xhr2.send(null);
+                        }	
+                    }
+                    xhr.open("GET", url + params, true);
+                    xhr.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                    xhr.send(null);
+                    
+                    
+                }
+                function error() {
+                    output = "Unable to retrieve your location";
+                };
+                
+                navigator.geolocation.getCurrentPosition(success, error);
+                
+            }
+            function start() {
+                geoFindNearestHospitals();
+                geoFindNearestHospitals2();
+            }
+            window.onload = start;
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src = "js/script2.js"></script>
+    </body>
+</html>

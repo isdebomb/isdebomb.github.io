@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    color:white;
+    background:black;
+}
+
+.lmao {
+    font-size: 5px;
+    width: 300px;
+    margin: 0 auto;
+    top: 10vh;
+}

@@ -1,0 +1,1256 @@
+body {
+    font-family: 'Raleway';
+}
+
+#p-body {
+    font-size: 15px;
+}
+
+.initials {
+     
+    font-family: 'Bungee Shade';
+    margin-left: 7px;
+    color: white;
+}
+
+.sidething {
+    display: inline-block;
+    width: 53px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #EC4A32;
+    padding: none;
+    margin-bottom: -1000px;
+    z-index: 2;
+}
+
+#contains {
+    margin-left: 54px;
+    z-index: 0;
+    position:relative;
+}
+
+.education2 {
+    margin-top: 1px;
+}
+
+.me {
+    height: 200px;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+}
+
+.card {
+    height: 200px;
+    text-align:center;
+    vertical-align: middle;
+    -webkit-filter: blur(2px) grayscale(60%);
+    -moz-filter: blur(2px) grayscale(60%);
+    -ms-filter: blur(2px) grayscale(60%);
+    -o-filter: blur(2px) grayscale(60%);
+    filter: blur(2px) grayscale(60%);
+}
+
+.card:hover {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+    z-index: 1;
+}
+
+.content {
+    border: solid 1px white;
+    background: rgba(0,0,0,.7);
+    font-family: 'Raleway';
+    font-weight: 100;
+    position: absolute;
+    top: 50%; left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+#uchicago {
+    background: url('../img/uchicago.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#sewickleyacademy {
+    background: url('../img/sewickacademy.jpg');
+    background-position: center;
+    background-size: cover;
+    border-right: solid 1px white;
+}
+
+#carnegiemellon {
+    background: url('../img/cmu.jpg');
+    background-position: center;
+    background-size: cover;
+    border-right: solid 1px white;
+}
+
+#selftaught {
+    background: url('../img/selftaugh.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#inventoryconnection {
+    background: url('../img/iconnection.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#explorer {
+    background: url('../img/explorer.png');
+    background-position: center;
+    background-size: cover;
+}
+
+#me {
+    background: url('../img/lowpoly.jpg') no-repeat;
+    background-size: contain;
+    background-position: -webkit-calc(((100% - 20px)/2));
+    background-position: -moz-calc(((100% - 20px)/2));
+    background-position: -ms-calc(((100% - 20px)/2));
+    background-position: -o-calc(((100% - 20px)/2));
+    background-position: calc(((100% - 20px)/2));
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -ms-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    filter: blur(0px) grayscale(0%);
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+#me2 {
+    background: url('../img/lowpoly.jpg') no-repeat;
+    background-size: contain;
+    background-position: -webkit-calc(((100% - 20px)/2));
+    background-position: -moz-calc(((100% - 20px)/2));
+    background-position: -ms-calc(((100% - 20px)/2));
+    background-position: -o-calc(((100% - 20px)/2));
+    background-position: calc(((100% - 20px)/2));
+    -webkit-filter: blur(0px) grayscale(0%);
+    -moz-filter: blur(0px) grayscale(0%);
+    -ms-filter: blur(0px) grayscale(0%);
+    -o-filter: blur(0px) grayscale(0%);
+    filter: blur(0px) grayscale(0%);
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+#sewickleyacademy2 {
+    background: url('../img/sewickacademy.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#upmc {
+    background: url('../img/upmc.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#facebook {
+    background: url('../img/facebook.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#clubw {
+    background: url('../img/clubw.jpg');
+    background-size: cover;
+    background-position: center;
+    border-left: solid 1px white;
+    border-right: solid 1px white;
+}
+
+#polyart {
+    background: url('../img/lauren.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#myreceipts {
+    background: url('../img/myreceipts.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#yourcalc {
+    background: url('../img/yourcalc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#aig {
+    background: url('../img/iaccidents.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#presentation {
+    background: url('../img/presentation.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#instagram {
+    background: url('../img/instagramlogo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#church {
+    background: url('../img/church.jpg');
+    background-size: cover;
+    background-position: center;
+    border-right: solid 1px white;
+}
+
+#finalschedule {
+    background: url('../img/finalschedule.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#airhorn {
+    background: url('../img/horn.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#post1 {
+    background: url('../img/post-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#post2 {
+    background: url('../img/post-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#post3 {
+    background: url('../img/post-3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#post4 {
+    background: url('../img/post-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.content {
+    height: 0px; 
+    width: 0px;
+}
+
+.card-type {
+    display:none;
+}
+
+.card:hover .card-type {
+    display:inline-block;
+    color: white;
+    font-size: 25px;
+}
+
+.card:hover .content {
+    height: 70px;
+    width: 230px;
+}
+
+.card:hover .content2 {
+    width: 175px;
+}
+
+.card:hover .cmucont {
+    width: 270px;
+}
+
+.card:hover .cmucont2 {
+    width: 290px;
+}
+
+.card:hover .selft {
+    width: 180px;
+}
+
+.card:hover .ic {
+    width: 180px;
+}
+
+.sep {
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
+.card:hover .sep {
+    visibility: visible;
+    width: 150px;
+    height: 5px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+
+.sub-type {
+    font-size: 19px !important;
+    font-weight: 400 !important;
+}
+
+.sub-type2 {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    margin-top: 3px;
+}
+
+.edu-point, .exp-point, .pro1-point, .pro2-point, .blog-point, .about-point, .contact-point {
+    width: 9.5px;
+    height: 9.5px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 1000px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.edu-point {
+    margin-top: 200px;
+}
+
+
+
+.pg-section, .pg-section2, .pg-section3, .pg-section4, .pg-section5, .pg-section6 {
+    font-family: 'Raleway';
+    font-weight: 200;
+    font-size: 10px;
+    margin-left: -13px;
+    margin-top: -8px;
+    z-index: 2;
+    background:  rgba(255, 255, 255, 1);;
+    position:fixed;
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 10px;
+    text-align: center;
+    visibility:hidden;
+}
+
+.edu-point:hover .pg-section{
+    visibility: visible;
+}
+
+.exp-point:hover .pg-section2{
+    visibility: visible;
+}
+
+.pro1-point:hover .pg-section3{
+    visibility: visible;
+}
+
+.blog-point:hover .pg-section4{
+    visibility: visible;
+}
+
+.about-point:hover .pg-section5{
+    visibility: visible;
+}
+
+.contact-point:hover .pg-section6{
+    visibility: visible;
+}
+
+.blandlink {
+    color: #EC4A32;
+}
+
+.blandlink:hover, .blandlink:active, .blandlink:focus{
+    color: #EC4A32;
+}
+
+.git {
+    margin-left: -webkit-calc((100% - 215px)/2)  /*80px*/;
+    margin-left: -moz-calc((100% - 215px)/2);
+    margin-left: -ms-calc((100% - 215px)/2);
+    margin-left: -o-calc((100% - 215px)/2);
+    margin-left: calc((100% - 215px)/2);
+    margin-top: 15px;
+    display:inline-block;
+    color: #EC4A32;
+}
+
+.lin {
+    margin-left: -webkit-calc((100% - 215px)/4) /*40px*/;
+    margin-left: -moz-calc((100% - 215px)/4);
+    margin-left: -ms-calc((100% - 215px)/4);
+    margin-left: -o-calc((100% - 215px)/4);
+    margin-left: calc((100% - 215px)/4);
+    margin-top: 10px;
+    color: #EC4A32;
+}
+
+.mail {
+    margin-left: -webkit-calc((100% + 123px)/2);
+    margin-left: -moz-calc((100% + 123px)/2);
+    margin-left: -ms-calc((100% + 123px)/2);
+    margin-left: -o-calc((100% + 123px)/2);
+    margin-left: calc((100% + 123px)/2);
+    margin-top: -107px;
+    color: #EC4A32;
+}
+
+.res {
+    margin-left: -webkit-calc((100% + 148px)/2);
+    margin-left: -moz-calc((100% + 148px)/2);
+    margin-left: -ms-calc((100% + 148px)/2);
+    margin-left: -o-calc((100% + 148px)/2);
+    margin-left: calc((100% + 148px)/2);
+    margin-top: 22px;
+    color: #EC4A32;
+}
+
+
+.img-padding {
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+}
+
+.popup {
+    display:none;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    text-align:center;
+}
+
+.popup-contains {
+    position:absolute;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.popup-image {
+    object-fit: cover;
+    width: 75vw;
+    height: 300px;
+}
+
+.popup-img-div {
+    width: 75vw;
+    height: 300px;
+    margin-left: 12.5vw;
+}
+
+.popup-stuff {
+    border-top: solid 1px black;
+    background: white;
+    width: 75vw;
+    border-top: solid 1px black;
+    margin-left: 12.5vw;
+    position:absolute;
+    text-align: left;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 17px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+
+#close-popup {
+    position:absolute;
+    margin-left: 71vw;
+    margin-top: 20px;
+    color: white;
+}
+
+#close-popup:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.pop-back {
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    display: none;
+}
+
+.subheading {
+    color: grey;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	background: url('../img/loading.gif') center no-repeat #fff;
+}
+
+
+#me2 {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    #uchicago {
+        background-position: center;
+    }
+    #inventoryconnection {
+         background-position: center;
+    }
+    
+    #sewickleyacademy2 {
+        background-position: center;
+    }
+    .popup-image {
+    object-fit: cover;
+    width: 90vw;
+    height: 200px;
+}
+
+.popup-img-div {
+    width: 90vw;
+    height: 300px;
+    margin-left: 5vw;
+}
+
+    .popup-stuff {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: -100px;
+    }
+    .card {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        height: 50vh;
+        border-bottom: solid 1px white;
+        border-top: solid 1px white;
+    }
+    
+    #me {
+        height: 50vh;
+    } 
+    #me2 {
+        height: 50vh;
+    }
+    
+    .card-type {
+        display:inline-block;
+        color: white;
+        font-size: 25px;
+    }
+        .card:hover .card-type {
+    display:inline-block;
+    color: white;
+    font-size: 25px;
+}
+
+.content {
+    height: 70px;
+    width: 230px;
+}
+
+.content2 {
+    width: 175px;
+}
+
+.cmucont {
+    width: 270px;
+}
+
+.cmucont2 {
+    width: 290px;
+}
+
+.selft {
+    width: 180px;
+}
+
+.ic {
+    width: 180px;
+}
+
+.sep {
+    visibility: visible;
+    width: 150px;
+    height: 5px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+}
+
+
+.sub-type {
+    font-size: 19px !important;
+    font-weight: 400 !important;
+}
+
+.sub-type2 {
+    font-size: 17px !important;
+    font-weight: 500 !important;
+    margin-top: 3px;
+}
+    
+    .card:hover {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    
+    
+    
+    .git, .lin, .mail, .res {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        -o-filter: blur(0px);
+        filter: blur(0px);
+    }
+    .edu-point:hover .pg-section{
+    visibility: visible;
+}
+    .mail {
+    margin-left: -webkit-calc((100% + 150px)/2);
+        margin-left: -moz-calc((100% + 150px)/2);
+        margin-left: -ms-calc((100% + 150px)/2);
+        margin-left: -o-calc((100% + 150px)/2);
+        margin-left: calc((100% + 150px)/2);
+}
+
+.res {
+    margin-left: -webkit-calc((100% + 230px)/2);
+        margin-left: -moz-calc((100% + 230px)/2);
+        margin-left: -ms-calc((100% + 230px)/2);
+        margin-left: -o-calc((100% + 230px)/2);
+        margin-left: calc((100% + 230px)/2);
+}
+    
+    #me {
+        display:none;
+    }
+    
+    #me2 {
+        display:block;
+        margin-left: -1px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+    }
+}
+
+@media (max-width: 700px) {
+    #uchicago {
+        background-position: center;
+    }
+    #inventoryconnection {
+         background-position: center;
+    }
+    
+    #sewickleyacademy2 {
+        background-position: center;
+    }
+    .card {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        height: 50vh;
+        border-bottom: solid 1px white;
+        border-top: solid 1px white;
+    }
+    
+    #me {
+        height: 50vh;
+    }
+    
+    #me2{
+        height: 50vh;
+    }
+    .mail {
+    margin-left: -webkit-calc((100% + 130px)/2);
+        margin-left: -moz-calc((100% + 130px)/2);
+        margin-left: -ms-calc((100% + 130px)/2);
+        margin-left: -o-calc((100% + 130px)/2);
+        margin-left: calc((100% + 130px)/2);
+}
+
+.res {
+    margin-left: -webkit-calc((100% + 170px)/2);
+        margin-left: -moz-calc((100% + 170px)/2);
+        margin-left: -ms-calc((100% + 170px)/2);
+        margin-left: -o-calc((100% + 170px)/2);
+        margin-left: calc((100% + 170px)/2);
+}
+    
+}
+
+@media (max-width: 550px) {
+    #uchicago {
+        background-position: center;
+    }
+    #inventoryconnection {
+         background-position: center;
+    }
+    
+    #sewickleyacademy2 {
+        background-position: center;
+    }
+    .card {
+        -webkit-filter: grayscale(0%);
+        -moz-filter: grayscale(0%);
+        -ms-filter: grayscale(0%);
+        -o-filter: grayscale(0%);
+        filter: grayscale(0%);
+        height: 30vh;
+        border-bottom: solid 1px white;
+        border-top: solid 1px white;
+    }
+    
+    #me {
+        height: 30vh;
+    }
+    
+    #me2 {
+        height: 30vh;
+    }
+    .mail {
+    margin-left: -webkit-calc((100% + 110px)/2);
+        margin-left: -moz-calc((100% + 110px)/2);
+        margin-left: -ms-calc((100% + 110px)/2);
+        margin-left: -o-calc((100% + 110px)/2);
+        margin-left: calc((100% + 110px)/2);
+}
+
+.res {
+    margin-left: -webkit-calc((100% + 125px)/2);
+        margin-left: -moz-calc((100% + 125px)/2);
+        margin-left: -ms-calc((100% + 125px)/2);
+        margin-left: -o-calc((100% + 125px)/2);
+        margin-left: calc((100% + 125px)/2);
+}
+}
+
+@media (min-width: 992px) {
+    
+    .edu-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.exp-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.pro1-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.pro2-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.blog-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.about-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.contact-point:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    background: rgba(255, 255, 255, .8);
+}
+
+.edu-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.exp-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.pro1-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.pro2-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.blog-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.about-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+
+.contact-point:active {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+    background: rgba(255, 255, 255, .8);
+}
+}
+@media (max-width: 750px) {
+    #p-body {
+    font-size: 16px;
+}
+}
+@media (max-width: 500px) {
+    .popup-image {
+    object-fit: cover;
+    width: 96vw;
+    height: 200px;
+}
+
+.popup-img-div {
+    width: 96vw;
+    height: 300px;
+    margin-left: 2vw;
+}
+
+    .popup-stuff {
+        
+    padding-left: 6vw;
+    padding-right: 6vw;
+        width: 96vw;
+        margin-left: 2vw;
+        margin-top: -100px;
+    }
+
+}
+
+@media (max-width: 1294px) {
+    #close-popup {
+    margin-left: 69vw;
+    }
+}
+
+@media (max-width: 991px) {
+    #close-popup {
+    margin-left: 83vw;
+}
+}
+
+@media (max-width: 662px) {
+    #close-popup {
+    margin-left: 80vw;
+}
+}
+
+@media (max-width: 500px) {
+    #close-popup {
+    margin-left: 84vw;
+}
+}
+
+@media (max-width: 366px) {
+    #close-popup {
+    margin-left: 80vw;
+}
+}
+
+@media (max-width: 313px) {
+    #close-popup {
+    margin-left: 78vw;
+}
+}
+
+@media (max-height: 490px) {
+    .edu-point {
+        margin-top: 100px;
+    }
+}
+
+@media (max-height: 390px) {
+    .edu-point {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(2.5);
+        -moz-transform: translate(-50%, -50%) scale(2.5);
+        -ms-transform: translate(-50%, -50%) scale(2.5);
+        -o-transform: translate(-50%, -50%) scale(2.5);
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+}
+
+@media (max-width: 780px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(2.1);
+        -moz-transform: translate(-50%, -50%) scale(2.1);
+        -ms-transform: translate(-50%, -50%) scale(2.1);
+        -o-transform: translate(-50%, -50%) scale(2.1);
+        transform: translate(-50%, -50%) scale(2.1);
+    }
+}
+
+@media (max-width: 668px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.7);
+        -moz-transform: translate(-50%, -50%) scale(1.7);
+        -ms-transform: translate(-50%, -50%) scale(1.7);
+        -o-transform: translate(-50%, -50%) scale(1.7);
+        transform: translate(-50%, -50%) scale(1.7);
+    }
+}
+
+@media (max-width: 540px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1.3);
+        -moz-transform: translate(-50%, -50%) scale(1.3);
+        -ms-transform: translate(-50%, -50%) scale(1.3);
+        -o-transform: translate(-50%, -50%) scale(1.3);
+        transform: translate(-50%, -50%) scale(1.3);
+    }
+}
+
+@media (max-width: 445px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        -moz-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+        -o-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media (max-width: 340px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(.95);
+        -moz-transform: translate(-50%, -50%) scale(.95);
+        -ms-transform: translate(-50%, -50%) scale(.95);
+        -o-transform: translate(-50%, -50%) scale(.95);
+        transform: translate(-50%, -50%) scale(.95);
+    }
+}
+
+@media (max-width: 320px) {
+    .content {
+        top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%) scale(.8);
+        -moz-transform: translate(-50%, -50%) scale(.8);
+        -ms-transform: translate(-50%, -50%) scale(.8);
+        -o-transform: translate(-50%, -50%) scale(.8);
+        transform: translate(-50%, -50%) scale(.8);
+    }
+}
+
+@media (min-width: 0px) {
+    .edu-point .pg-section{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+    
+.exp-point .pg-section2{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.pro1-point .pg-section3{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.blog-point .pg-section4{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.about-point .pg-section5{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.contact-point .pg-section6{
+    visibility: visible;
+    opacity: 1;
+    background-color: #FFF2F2;
+    font-weight: 600;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+}
+
+@media (min-width: 0px) {
+    .edu-point {
+        margin-left: -15px;
+    }
+    
+    .edu-point:hover .pg-section {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .edu-point:hover {
+        color: white;
+    }
+    
+    .exp-point {
+        margin-left: -20px;
+    }
+    
+    
+    .exp-point:hover .pg-section2 {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .exp-point:hover {
+        color: white;
+    }
+    
+    .pro1-point {
+        margin-left: -3px;
+    }
+    
+    .pro1-point:hover .pg-section3 {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .pro1-point:hover {
+        color: white;
+    }
+    
+    .blog-point {
+        margin-left: 15px;
+    }
+    
+    .blog-point:hover .pg-section4 {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .blog-point:hover {
+        color: white;
+    }
+    
+    .about-point {
+        margin-left: 7px;
+    }
+    
+    .about-point:hover .pg-section5 {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .about-point:hover {
+        color: white;
+    }
+    
+    .contact-point {
+        margin-left: -2px;
+    }
+    
+    .contact-point:hover .pg-section6 {
+        background: #EC4A32;
+        border: solid 1px white;
+    }
+    
+    .contact-point:hover {
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    
+    .card:hover {
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: scale(1.075);
+        -moz-transform: scale(1.075);
+        -ms-transform: scale(1.075);
+        -o-transform: scale(1.075);
+        transform: scale(1.075);
+        border: solid 1px white;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}

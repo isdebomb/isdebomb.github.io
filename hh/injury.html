@@ -1,0 +1,74 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css/style.css">
+        <title>Speed ER Injury</title>
+    </head>
+    <body id = "home">
+        <div id = "welcome">Report an Injury</div>
+        <img id="settings" src = "img/settings.svg">
+        <div id = "drop-down">
+            <p class="drop-options"><a class="nounderline" href="home.html">Home</a></p>
+            <p class="drop-options"><a class="nounderline" href="profile.html">Profile</a></p>
+            <p class="drop-options"><a class="nounderline" href="login.html">Logout</a></p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "container">
+            <div class="card iminjured" id = "thelogincard">
+                <br>
+                <br>
+                <form id="injuryform" action="confirm.html">
+                    <div id = "injurytotal" class="input">
+                        <input type="text" id="Injury" required="required"/>
+                        <label id="InjuryLabel" for="Injury">Describe Your Injury</label>
+                        <div class="bar"></div>
+                    </div>
+                    <img id="microphone" onclick="startDictation()" src = "img/microphone.svg">
+                    <div class="input">
+                        <input type="number" min="1" max="10" id="Pain" required="required"/>
+                        <label id="PainLabel" for="Pain">Rate Pain (1 - 10)</label>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="button">
+                        <button href = "route-stores.html"><span>Submit</span></button>
+                    </div></div>
+                </form>
+            </div>
+        </div>
+    <!-- HTML5 Speech Recognition API -->
+    <script>
+      function startDictation() {
+
+        if (window.hasOwnProperty('webkitSpeechRecognition')) {
+
+          var recognition = new webkitSpeechRecognition();
+
+          recognition.continuous = false;
+          recognition.interimResults = false;
+
+          recognition.lang = "en-US";
+          recognition.start();
+
+          recognition.onresult = function(e) {
+            document.getElementById('Injury').value
+                                     = e.results[0][0].transcript;
+            recognition.stop();
+          };
+
+          recognition.onerror = function(e) {
+            recognition.stop();
+          }
+
+        }
+      }
+    </script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src = "js/script2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,703 @@
+
+a {
+    text-decoration: underline;
+    color: black;
+}
+
+/*BEGIN LOGIN/PASSWORD PAGE CSS*/
+#login {
+    background: url(../img/login.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Avenir';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    box-shadow: 10px, 10px, white;
+}
+
+.card {
+    padding: 10px 0 20px 0;
+    margin: 0 auto 2rem;
+    min-width: 10rem;
+    max-width: 40rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    word-wrap: break-word;
+    transition: 0.3s;
+}
+
+.card#thelogincard, .card#newprofilecard {
+    max-width: 30rem;
+    max-height: 87vh;
+}
+
+.card#newprofilecard{
+    max-width: 40rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.images {
+    width: 85%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+}
+
+.card .title {
+    position: relative;
+    border-left: 6px solid #36b3de;
+    margin: 0 0 30px;
+    padding: 10px 0 0px 45px;
+    color: #36b3de;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card .titletwo {
+    position: relative;
+    border-left: 6px solid #36b3de;
+    margin: 0 0 30px;
+    padding: 10px 0 0px 45px;
+    color: #36b3de;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.card .input {
+    position: relative;
+    margin: 0 60px 50px;
+}
+
+.card .input input {
+    position: relative;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 60px;
+    border: 0;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card .input input:focus ~ label {
+    color: #A6A4A4;
+    -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+    width: 50%;
+}
+.card .input input:valid ~ label {
+    color: #A6A4A4;
+    -webkit-transform: translate(-12%, -50%) scale(0.75);
+            transform: translate(-12%, -50%) scale(0.75);
+}
+
+.card .input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #A6A4A4;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+}
+.card .input .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #A6A4A4;
+  width: 100%;
+  height: 1px;
+}
+.card .input .bar:before, .card .input .bar:after {
+  content: '';
+  position: absolute;
+  background: #36b3de;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.card .input input:focus ~ .bar:before, .card .input input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.card .input .bar:before {
+  left: 50%;
+}
+.card .input .bar:after {
+  right: 50%;
+}
+.card .button {
+  margin: 0 60px;
+  text-align: center;
+}
+.card .button button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  width: 200px;
+  border: 2px solid #36b3de;
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button button span {
+  position: relative;
+  z-index: 1;
+  color: #36b3de;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.card .button button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: #36b3de;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button button:hover, .card .button button:active, .card .button button:focus {
+  border-color: #36b3de;
+}
+.card .button button:hover span, .card .button button:active span, .card .button button:focus span {
+  color: #36b3de;
+}
+.card .button button:active span, .card .button button:focus span {
+  color: #ffffff;
+}
+.card .button button:active:before, .card .button button:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+
+.card .password {
+  margin: 20px 0 0;
+  color: #A6A4A4;
+  font-size: 20px;
+  font-weight: 300;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#creacc {
+    text-align: left;
+    display: inline-block;
+    margin-left: 45px;
+}
+
+#forpass {
+    text-align: right;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+#inorder {
+    text-align: left;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 80px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#inorder:hover {
+    color:black;
+}
+
+.card .password a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .password a:hover {
+  color: #bababa;
+}
+
+.card .create-input {
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+.card .titlefixed {
+    margin-top: -54px;
+    position: fixed;
+    background: #36b3de;
+    color:white;
+    padding-bottom: 25px;
+    width: 35.9rem;
+    padding-top: 34px;
+    z-index: 5;
+}
+
+#Birth {
+    color: rgba(0,0,0,0);
+}
+
+.ynoption {
+    border-color: #A6A4A4;
+    color: #A6A4A4;
+    border: solid 4px #A6A4A4;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    text-align: center;
+    font-weight: 600;
+}
+
+#ynlabel {
+    display: inline-block;
+    width: 400px;
+    margin-top: 3px;
+}
+#Treatment {
+    display: inline-block;
+    width: 400px;
+}
+
+.ynoption:hover {
+    color: #36b3de;
+    border-color: #36b3de;
+    cursor: pointer;
+}
+
+#inorder2 {
+    text-align: left;
+    padding-left: 53px;
+    padding-right: 53px;
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+#inorder2:hover {
+    color:black;
+}
+
+.da-operation {
+    display:none;
+}
+
+.backnew {
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 120px;
+}
+
+.finish {
+    display: inline-block;
+}
+/*END LOGIN/PASSWORD PAGE CSS*/
+
+/* HOME PAGE CSS */
+#home {
+    background: #D8DAD9;
+}
+
+#settings {
+    display: inline-block;
+    height: 35px;
+    float: right;
+    margin-right: 60px;
+    margin-top: 56px;
+    z-index: 10;
+}
+
+#settings:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+}
+
+#welcome {
+    font-family: 'Avenir';
+    font-weight: 600;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.home-card {
+    display: inline-block;
+    width: 500px;
+    height: 370px;
+    background: rgba(255,255,255,0.9);
+    text-align:center;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.5);
+}
+
+
+#injury-report {
+    margin-right: 100px;
+}
+
+#injury-report, #nearest-hospital {
+    text-align: left;
+}
+
+#injury-report:hover {
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+.home-text {
+    font-family: 'Avenir';
+    font-weight: 100;
+    font-size: 20px;
+    text-align: left;
+}
+
+#da-cards {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#report-head {
+    text-align: left;
+}
+
+#near-text {
+    position: absolute;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 250px;
+    display: inline-block;
+    font-weight: 600;
+}
+#hospital-name {
+    display: inline-block;
+    position: absolute;
+    margin-top: 273px;
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+#hospital-address {
+    display: inline-block;
+    position:absolute;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 304px;
+}
+
+#hospital-number {
+    display: inline-block;
+    position: absolute;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 329px;
+}
+
+#hospital-wait {
+    font-size: 120px;
+    padding-top: 13px;
+    width: 193px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    position:absolute;
+    margin-left: 155px;
+    margin-top: 25px;
+    font-weight: 500;
+    color: white;
+    background: #16A573;
+}
+
+#hospital-wait-text {
+    display: inline-block;
+    position:absolute;
+    margin-top: 173px;
+    margin-left: 207px;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+#injury-img {
+    margin-left: 125px;
+    margin-top: 30px;
+    display: inline-block;
+    position: absolute;
+    height: 230px;
+}
+
+#report-text {
+    display: inline-block;
+    position: absolute;
+    margin-left: 112px;
+    margin-top: 280px;
+    font-size: 40px;
+}
+
+#drop-down {
+    display:none;
+    font-family: 'Avenir';
+    background: white;
+    height: 150px;
+    width: 140px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 8px;
+    position:absolute;
+    margin-left: 1057px;
+    margin-top: 0px;
+    z-index: 0;
+}
+
+.drop-options {
+    text-align: center;
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+.drop-options:hover {
+    background: #eee;
+    cursor:pointer;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+/* END HOME PAGE CSS */
+
+/* INJURY PAGE CSS */
+
+
+#report-an-injury {
+    text-align: left;
+}
+
+#report-an-injury:hover {
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+
+#Pain, #Injury, #InjuryLabel, #PainLabel {
+    font-family: 'Avenir';
+}
+
+#Injury {
+    padding-right: 40px;
+}
+
+
+.iminjured {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+}
+
+#microphone {
+    height: 40px;
+    display: inline-block;
+    position:absolute;
+    margin-left: 380px;
+    margin-top: -100px;
+}
+
+#microphone:hover {
+    cursor:pointer;
+}
+/* END INJURY PAGE CSS */
+
+.new-wait {
+    font-size: 40px;
+    padding-top: 10px;
+    width: 73px;
+    height: 63px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    position:absolute;
+    margin-top: 155px;
+    font-weight: 500;
+    color: white;
+    background: #16A573;
+}
+
+#dist-miles {
+    margin-left: 70px;
+}
+
+#dist-time {
+    margin-left: 217px;
+}
+
+#hosp-time {
+    margin-left: 365px;
+}
+
+#total-time {
+    margin-left: 191px;
+    margin-top: 280px;
+    font-size: 70px;
+    padding-top: 10px;
+    width: 128px;
+    height: 118px;
+    margin-bottom: 10px;
+}
+
+.hospital-wait-text {
+    display: inline-block;
+    position:absolute;
+    margin-top: 368px;
+    margin-left: 215px;
+    font-size: 18px;
+    color: white;
+    width: 100px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.hospital-wait-text2 {
+    display: inline-block;
+    position:absolute;
+    margin-top: 218px;
+    margin-left: 217px;
+    font-size: 18px;
+    color: black;
+    width: 80px;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.confirm-card {
+    height: 500px;
+    margin-top: -80px;
+}
+
+#near-text-new {
+    position: absolute;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-top: 35px;
+    display: inline-block;
+    font-weight: 600;
+}
+#hospital-name-new {
+    display: inline-block;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+#hospital-address-new {
+    display: inline-block;
+    position:absolute;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 89px;
+}
+
+#hospital-number-new {
+    display: inline-block;
+    position: absolute;
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 114px;
+}
+
+#label-wait1 {
+    color:black;
+    display: inline-block;
+    position: absolute;
+    margin-left: 84px;
+    margin-top: 230px;
+}
+
+#label-wait2 {
+    color:black;
+    display: inline-block;
+    position: absolute;
+    margin-left: 195px;
+    margin-top: 230px;
+}
+
+#label-wait3 {
+    color:black;
+    display: inline-block;
+    position: absolute;
+    margin-left: 360px;
+    margin-top: 230px;
+}
+
+#confirm-decline, #confirm-submit {
+    font-family: 'Avenir';
+    position: absolute;
+    display: inline-block;
+    border: solid 3px #36b3de;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #36b3de;
+}
+
+#confirm-decline {
+    margin-top: 435px;
+    margin-left: 75px;
+}
+
+#confirm-submit {
+    margin-top: 435px;
+    margin-left: 315px;
+}
+
+#confirm-decline:hover, #confirm-submit:hover {
+    cursor: pointer;
+}
+
+#confirm-decline:active, #confirm-submit:active {
+    background: #36b3de;
+    color: white;
+}
+
+.nolink {
+    text-decoration: none;
+    color: #36b3de;
+}
+
+.nolink:active {
+    color:white;
+}
+
+.ma-card-2 {
+    display:none;
+}
