@@ -154,6 +154,11 @@ button:focus, input:focus, textarea:focus {
     left: 49.5%;
     height: 99.5%;
     width: 50%;
+    overflow-x: auto;
+}
+
+#member-information {
+    padding-bottom: 50px;
 }
 
 #logo {
@@ -332,22 +337,50 @@ button:focus, input:focus, textarea:focus {
     background-repeat: none;
 }
 
+.rubin {
+    background: url('../img/rubin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.aidan {
+    background: url('../img/aidan.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.morrison {
+    background: url('../img/morrison.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.steve {
+    background: url('../img/steve.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.zack {
+    background: url('../img/zack.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.itai {
+    background: url('../img/itai.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
 .ale {
     background: url('../img/ale.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-}
-
-.will {
-    background: url('../img/will.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-}
-
-.sun {
-    background: url('../img/sun.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -374,8 +407,8 @@ button:focus, input:focus, textarea:focus {
     background-repeat: none;
 }
 
-.alex {
-    background: url('../img/alex.jpg');
+.hummels {
+    background: url('../img/hummels.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -404,7 +437,7 @@ button:focus, input:focus, textarea:focus {
 
 #member-information {
     padding-top: 30px;
-    padding-left: 25px;
+    padding-left: 7px;
 }
 
 #name {
@@ -722,7 +755,7 @@ strong {
     .info {
         left: 0;
         width: 100%;
-        height: auto;
+        overflow-x: visible;
     }
     
     #menu {
@@ -739,6 +772,7 @@ strong {
         font-size: 18px;
         padding-bottom: 40px;
         text-align: center;
+        height: auto;
     }
     
     #members-div {
