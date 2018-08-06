@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<?php ob_start("ob_gzhandler"); ?>
+<html lang="en">
+    <head>
+        <title>Random Thingy</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var svg = d3.select('body').append('svg')
+            .attr("width", 1000)
+            .attr("height", 300);
+            var person1 = svg.append("image").attr("x", 0)
+            .attr("y", 0)
+            .attr("height", "200px")
+            .attr("xlink:href", "person1.jpg");
+            var person2 = svg.append("image").attr("class", "personmoved").attr("x", 161)
+            .attr("y", 0)
+            .attr("width", "200px")
+            .attr("height", "200px")
+            .attr("xlink:href", "person2.jpg");
+            function mover () {
+                var movementX = d3.event.x - parseInt(d3.select('.personmoved').attr("width")) / 2;
+                
+                if (d3.select('body').select('svg').select(".personmoved").node().getBBox().x >= 161 && movementX >= 161) {
+                    d3.select('.personmoved')
+                    .attr("x", movementX)
+                    .attr("y", 0);
+                }
+
+                d3.select(".distance").html("Distance: " + (person2.node().getBBox().x - person1.node().getBBox().x - 160) + "px");
+            }
+            var drag = d3.drag()
+            .on("drag", mover);
+            d3.select('body').select('svg').select(".personmoved")
+            .call(drag);
+        </script>
+        <p class="distance">Distance: 1px</p>
+    </body>
+</html>
