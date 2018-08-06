@@ -22,9 +22,13 @@
             function mover () {
                 var movementX = d3.event.x - parseInt(d3.select('.personmoved').attr("width")) / 2;
                 
-                if (d3.select('body').select('svg').select(".personmoved").node().getBBox().x >= 161 && movementX >= 161) {
+                d3.select('.personmoved')
+                .attr("x", movementX)
+                .attr("y", 0);
+
+                if (movementX < 161) {
                     d3.select('.personmoved')
-                    .attr("x", movementX)
+                    .attr("x", 161)
                     .attr("y", 0);
                 }
 
