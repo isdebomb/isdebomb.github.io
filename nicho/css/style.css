@@ -20,6 +20,8 @@ html, body {
 .section {
     min-height: 100vh;
     overflow: auto;
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 40px;
 }
 
 .hatsopoulos {
@@ -87,7 +89,7 @@ html, body {
 
 .innerbrain {
     position: absolute;
-    top: 1px;
+    top: 4px;
     left: 1px;
     display: none;
 }
@@ -173,10 +175,163 @@ html, body {
     margin-left: 2px;
 }
 
+.people-nav {
+    text-align: center;
+    margin-top: 60px;
+}
 
+.small-person {
+    height: 75px;
+    width: 75px;
+    margin-right: 20px;
+    border-radius: 100px;
+    border: solid 1px black;
+    display: inline-block;
+    background: #CFCFCF;
+}
 
+.news-container {
+    margin-left: 79px;
+    margin-top: 60px;
+}
 
+.news-chunk {
+    float: left;
+    margin-right: 50px;
+}
+
+.news-title {
+    font-weight: 800;
+}
+
+.news-img {
+    height: 190px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.news-title {
+    margin-top: 15px;
+    display: inline-block;
+    max-width: 250px;
+    padding: 8px;
+}
+
+.news1 {
+    background: url('../img/news/news1.png');
+    background-size: cover;
+}
+
+.news2 {
+    background: url('../img/news/news2.png');
+    background-size: cover;
+}
+
+.authors, .journal {
+    display: block;
+}
+
+.journal {
+    margin-bottom:5px;
+}
+
+.paper-title {
+    display: block;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.link-container {
+    margin-left: 79px;
+    margin-top: 100px;
+}
+
+.link-section {
+    float: left;
+    margin-right: 100px;
+}
+
+.link {
+    display: block;
+    text-decoration: underline;
+}
+
+.contact-container {
+    margin-left: 79px;
+}
+
+.contact-email {
+    font-family: 'Montserrat';
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 55px;
+    text-decoration: underline;
+}
+
+.aninput {
+    border: none;
+    border-bottom: solid 1px #979797;
+    display: inline-block;
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight: 100;
+}
+
+.formname, .email {
+    width: 40%;
+}
+
+.email {
+    margin-bottom: 60px;
+}
+
+.contact-form {
+    display: inline-block;
+    margin-top: 60px;
+    width: 65%;
+}
+
+.message {
+    width: 100%;
+}
+
+.formname {
+    margin-right: 19%;
+}
+
+.submit {
+    border: none;
+    border-bottom: solid 1px black;
+    background: #fff;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 20px;
+}
+
+.address-container {
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.address {
+    max-width: 250px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.number {
+    text-decoration: underline;
+}
+
+.puboff {
+    display: inline-block;
+}
+
+.chosen {
+    border: solid 3px black;
+}
 
 .selected {
     display:block;
 }
+
