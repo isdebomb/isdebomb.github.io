@@ -1,4 +1,9 @@
 $(document).ready(function(){
+    var type = window.location.hash.substr(1);
+    if (type == "thanks") {
+        $(".thanks").fadeTo(500, 1);
+    }
+
     var fadings = $(".fading");
     var sections = $(".section");
     var scroll = $(window).scrollTop();
@@ -103,6 +108,10 @@ $(document).ready(function(){
     $(".mini-brain").click(function(e) {
         var aid = $(this).attr("href");
         $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+    });
+
+    $(".exit").click(function(e) {
+        $(".thanks").fadeOut(500, 0);
     });
 
     $(".innerbrain").hover(function(e) {

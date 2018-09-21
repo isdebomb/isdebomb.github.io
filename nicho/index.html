@@ -31,6 +31,12 @@
         
     </head>
     <body>
+        <div class="thanks">
+            <span class="thank-title">Thanks!</span>
+            <p class="thank-description">We'll get back to you as soon as we can.</p>
+            <span class="exit">&#215;</span>
+        </div>
+
         <div class="mini-nav">
                 <div href="#home" class="mini-brain">
                     <span id="homen" class="brain-title">Home</span>
@@ -553,12 +559,13 @@
         <div id="contact" class="section contact fading">
             <div class="title">Contact</div>
             <div class="contact-container">
-                <div class="contact-email">nicho@uchicago.edu</div>
+                <div class="contact-email"><a href="mailto:nicho@uchicago.edu">nicho@uchicago.edu</a></div>
 
-                <form class="contact-form" action="" method="">
+                <form class="contact-form" action="https://formspree.io/gms@uchicago.edu" method="POST">
                     <input class="aninput formname" type="text" name="name" placeholder="Name"/>
-                    <input class="aninput email" type="text" name="email" placeholder="Email"/> <br>
+                    <input class="aninput email" type="email" name="_replyto" placeholder="Email"/> <br>
                     <textarea rows="4" class="aninput message" type="text" name="message" placeholder="Message"></textarea>
+                    <input type="hidden" name="_next" value="https://pondside.uchicago.edu/oba/faculty/Hatsopoulos/lab/#thanks"/>
                     <input class="submit" type="submit" value="Submit"/>
                 </form>
 
@@ -566,10 +573,10 @@
                     <div class="address">
                         1205 East 57th St. Culver Rm. 206 Chicago, IL 60637
                     </div>
-                    <div class="nichophone">Nicho’s Office: <span class="number">(773)-702-5594</span></div>
-                    <div class="studentphone">Student Office: <span class="number">(773)-795-9954</span></div>
-                    <div class="labphone">Lab: <span class="number">(773)-702-5024</span></div>
-                    <div class="fax">Fax: <span class="number">(773)-702-0037</span></div>
+                    <div class="nichophone">Nicho’s Office: <span class="number"><a href="tel:7737025594">(773)-702-5594</a></span></div>
+                    <div class="studentphone">Student Office: <span class="number"><a href="tel:7737959954">(773)-795-9954</a></span></div>
+                    <div class="labphone">Lab: <span class="number"><a href="tel:7737025024">(773)-702-5024</a></span></div>
+                    <div class="fax">Fax: <span class="number faxz">(773)-702-0037</span></div>
                 </div>
             </div>
             
@@ -578,6 +585,7 @@
         <div class="perm-shadow">
             Hatsopoulos
         </div>
+
       
     </body>
 </html>
