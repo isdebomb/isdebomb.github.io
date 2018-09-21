@@ -17,10 +17,11 @@
         <meta property="og:site_name" content="Hatsopoulos Lab" />
         <title>Hatsopoulos Lab</title>
 
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link type = "text/css" href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Open+Sans|Raleway|Poiret+One" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -30,8 +31,45 @@
         
     </head>
     <body>
+        <div class="mini-nav">
+                <div href="#home" class="mini-brain">
+                    <span id="homen" class="brain-title">Home</span>
+                    <img id="homeb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#research" class="mini-brain">
+                    <span id="researchn" class="brain-title">Research</span>
+                    <img id="researchb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#people" class="mini-brain">
+                    <span id="peoplen" class="brain-title">People</span>
+                    <img id="peopleb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#news" class="mini-brain">
+                    <span id="newsn" class="brain-title">News</span>
+                    <img id="newsb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#publications" class="mini-brain">
+                    <span id="publicationsn" class="brain-title">Publications</span>
+                    <img id="publicationsb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#links" class="mini-brain">
+                    <span id="linksn" class="brain-title">Links</span>
+                    <img id="linksb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+                <div href="#contact" class="mini-brain">
+                    <span id="contactn" class="brain-title">Contact</span>
+                    <img id="contactb" class="innerbrain" src="img/brainfilled.svg"/>
+                    <img class="outerbrain" src="img/brainempty.svg"/>
+                </div>
+            </div>
         
-        <div class="section homepage">
+        <div id="home" class="section homepage fading">
             
             <div class="mecharm">
                 <img class="armsvg" src="img/robotarm.svg"/>
@@ -44,110 +82,87 @@
                     Hatsopoulos
                 </span>
             </div>
-            <div class="summary">
+            <div id="summary" class="summary">
                 <p>Our research focuses on the neural basis of motor control and learning. We are investigating what features of motor behavior are encoded and how this information is represented in the collective activity of neuronal ensembles in the motor cortex.</p>
             </div>
-            <div class="main-nav">
+            <div id="navbar" class="main-nav">
                 <div class="nav-box nav-research">
-                    <span>Research</span>
+                    <span><a href="#research" class="sliding-link">Research</a></span>
                 </div>
                 <div class="nav-box">
-                    <span>People</span>
+                    <span><a href="#people" class="sliding-link">People</a></span>
                 </div>
                 <div class="nav-box">
-                    <span>News</span>
+                    <span><a href="#news" class="sliding-link">News</a></span>
                 </div>
                 <div class="nav-box">
-                    <span>Publications</span>
+                    <span><a href="#publications" class="sliding-link">Publications</a></span>
                 </div>
                 <div class="nav-box">
-                    <span>Links</span>
+                    <span><a href="#links" class="sliding-link">Links</a></span>
                 </div>
                 <div class="nav-contact">
-                    <span>Contact</span>
-                </div>
-            </div>
-            <div class="mini-nav">
-                <div class="mini-brain">
-                    <span class="brain-title">Home</span>
-                    <img class="innerbrain selected" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">Research</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">People</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">News</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">Publications</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">Links</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
-                </div>
-                <div class="mini-brain">
-                    <span class="brain-title">Contact</span>
-                    <img class="innerbrain" src="img/brainfilled.svg"/>
-                    <img class="outerbrain" src="img/brainempty.svg"/>
+                    <span><a href="#contact" class="sliding-link">Contact</a></span>
                 </div>
             </div>
         </div>
 
-        <div class="section research">
+        <div id="research" class="section research fading">
             <div class="title">Research</div>
             <div class="information">
-                <span class="info-title">Introduction</span>
-                <img class="arrow" src="img/arrow.svg"/>
-                <p class="info-description selected">Our research focuses on the cortical basis of motor control and learning. We are investigating what features of motor behavior are encoded and how this information is represented in the collective activity of large neuronal ensembles in the motor, premotor, and somatosensory cortices. We are also interested in what way these representations change as motor learning occurs. Our approach has been to simultaneously record neural activity from large groups of neurons using multi-electrode arrays while performing detailed kinematic, kinetic, and muscle measurements of goal-directed, motor behaviors, and to develop mathematical models that relate neural activity with behavior. These mathematical models provide insights as to what aspects of motor behavior are being encoded in cortical neurons, but also can be used to decipher or “decode” neural activity in order to predict movement which has practical implications for brain-machine interface development. Ultimately, this research may lead to neural prosthetic technologies that will allow people with spinal cord injury, ALS, or amputation to use brain signals to voluntarily control a device so as to interact with the world.</p>
+                <div class="combo">
+                    <span class="info-title">Introduction</span>
+                    <img class="arrow" src="img/arrow.svg"/>
+                </div>
+                <p class="info-description readingselected">Our research focuses on the cortical basis of motor control and learning. We are investigating what features of motor behavior are encoded and how this information is represented in the collective activity of large neuronal ensembles in the motor, premotor, and somatosensory cortices. We are also interested in what way these representations change as motor learning occurs. Our approach has been to simultaneously record neural activity from large groups of neurons using multi-electrode arrays while performing detailed kinematic, kinetic, and muscle measurements of goal-directed, motor behaviors, and to develop mathematical models that relate neural activity with behavior. These mathematical models provide insights as to what aspects of motor behavior are being encoded in cortical neurons, but also can be used to decipher or “decode” neural activity in order to predict movement which has practical implications for brain-machine interface development. Ultimately, this research may lead to neural prosthetic technologies that will allow people with spinal cord injury, ALS, or amputation to use brain signals to voluntarily control a device so as to interact with the world.</p>
             </div>
             <div class="information">
-                <span class="info-title">Trajectory Encoding</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Trajectory Encoding</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">Traditional theories of encoding in the motor and premotor cortices assume that single neurons encode static parameters of motion such as direction (Georgopoulos et al., 1982), velocity (Moran and Schwartz, 1999), or force (Evarts, 1968). In contrast and in line with Sherrington’s largely abandoned idea that motor cortical neurons control movement fragments (Leyton and Sherrington, 1917), we have argued that neurons encode temporally extensive movement trajectories. We have shown that a neuron possesses a preferred trajectory which extends over multiple time lags both into the future reflecting “motoric” effects as well as into the past reflecting “sensory” effects. We have examined such an approach for reaching, grasping, and unconstrained reach-to-grasp behaviors (Saleh et al., 2010; Saleh et al., 2012). We have also extended the idea of trajectory encoding to the simultaneous firing of groups of neurons (Hatsopoulos and Amit, 2011). We found that a simple additive rule could predict the preferred trajectories of pairs of neurons when they fire synchronously. That is, the preferred trajectory of a neuronal pair is the vector sum of the preferred trajectories of the constituent neurons in the pair. This has significant implications because it suggests how a large-scale neural assembly could construct complex movement representations by vectorally adding its constituent’s representations.</p>
             </div>
             <div class="information">
-                <span class="info-title">Spatio-temporal Patterns in Motor and Premotor Cortex</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Spatio-temporal Patterns in Motor and Premotor Cortex</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">Despite extensive research investigating the physiological properties of single cortical neurons, little is known about how spatio-temporal activity patterns emerge across large neuronal ensembles that may participate in sensorimotor encoding and motor control. We have documented evidence of propagating wave activity across the motor and premotor cortices as revealed from oscillatory local field potentials (LFPs) in non-human primates (Rubino et al., 2006) and more recently in a human subject (Takahashi et al., 2011). LFPs represent the aggregate synaptic potentials from a spherical volume surrounding the electrode tip and exhibit oscillatory activity in the beta frequency range (i.e. 13-35 Hz) within the motor cortex. These planar waves propagate primarily along a rostro-caudal axis in motor cortex at a speed of ~10-50 cm/s. </p>
                 <p class="info-description">We have also examined whether spiking activity among populations of motor cortical neurons reflects spatio-temporal patterns consistent with the LFP waves recorded from the same electrodes. These patterns are determined by estimating functional connections between neurons which are revealed when the past spiking activity of one neuron can predict the future spiking activity of a second neuron. We have found that a preponderance of functional connections that are oriented along the wave propagation axis (Kim et al., 2011; Quinn et al., 2011). </p>
                 <p class="info-description">More recently, we have examined the timing of attenuation of the beta frequency LFP oscillations. The amplitude of beta frequency LFP oscillations is known to attenuate around movement onset and is thought to be a reflection of an activated or excitable sensorimotor network. This attenuation phenomenon has been shown to be a correlate of locally activated or excitable motor cortex. We have shown that attenuation timing forms a spatial gradient across MI along the rostro-caudal axis. We show also that these spatiotemporal dynamics are recapitulated by the recruitment of a functionally defined neuronal subpopulation.</p>
             </div>
             <div class="information">
-                <span class="info-title">Long-term Exposure to a Brain-machine Interface</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Long-term Exposure to a Brain-machine Interface</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">Together with our colleagues, Dr. Karim Oweiss at the University of Florida and Dr. Andrew Fagg at the University of Oklahoma, we have been examining the capability of subjects to learn to control a robotic device using signals from the motor cortex after exposure to such an interface for months and years. Analogous to motor skill acquisition, subjects can learn to more effectively control a robot arm and hand to grasp objects with repeated practice. Moreover, we are examining the plasticity of the motor cortex that underlies this skill acquisition.</p>
             </div>
             <div class="information">
-                <span class="info-title">Cortical Control of Orofacial Movements and Learning</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Cortical Control of Orofacial Movements and Learning</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">In collaboration with Dr. Callum Ross, we are investigating the role of orofacial motor and somatosensory cortices in feeding behavior including tongue manipulation, jaw chewing, and swallowing. In addition, together with Drs. Ross and Barry Sessle from the University of Toronto, we are investigating plastic changes in orofacial cortices associated with motor skill acquisition involving the tongue.</p>
             </div>
             <div class="information">
-                <span class="info-title">Sensori-motor Interactions</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Sensori-motor Interactions</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">We have begun a collaborative project with Dr. Sliman Bensmaia to investigate how proprioceptive signals emanating from receptors in the muscles, joints and skin are processed in somatosensory cortex during natural grasping behavior. We are interested in how proprioceptive signals in areas 3a and 2 of somatosensory cortex interact with motor signals in motor cortex during different phases of grasp. We are characterizing the functional interactions between these cortical areas and how they evolve in time using statistical techniques that we have already developed.</p>
             </div>
             <div class="information">
-                <span class="info-title">Proprioceptive Augmentation of a Brain-machine Interface</span>
-                <img class="arrow up" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">Proprioceptive Augmentation of a Brain-machine Interface</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div> 
                 <p class="info-description">To date, most cortically-controlled brain-machine interfaces rely solely on vision for sensory feedback (Hatsopoulos and Donoghue, 2009). However, it is well known that patients suffering from the loss of proprioceptive feedback due to large-fiber sensory neuropathies exhibit severe motor deficits including slow and uncoordinated movements (Ghez et al., 1995). We have developed a paradigm by which control signals from the motor cortex moved computer cursor whose motion was followed by a robotic exoskeleton on which the arm rested so as to follow the cursor. Therefore, the intact proprioceptive system from the arm provided state information about the device (i.e. the cursor) that was being controlled from the motor cortex. We showed that the time to successfully reach a target decreased and the cursor paths became straighter with the addition of proprioceptive feedback as compared to a condition in which the arm was held stationary (Suminski et al., 2010). Together with Dr. Derek Kamper at the Illinois Institute of Technology, we are extending this work by developing a cortically-controlled, hand exoskeleton to move the fingers so as to provide naturalistic proprioception to the hand.</p>
             </div>
         </div>
 
-        <div class="section people">
+        <div id="people" class="section people fading">
             <div class="title">People</div>
             <div class="person-selected">
                 <div class="big-person">
@@ -176,7 +191,7 @@
             </div>
         </div>
 
-        <div class="section news">
+        <div id="news" class="section news fading">
             <div class="title">News</div>
             <div class="news-container">
                 <div class="news-chunk">
@@ -196,23 +211,25 @@
             </div>
         </div>
 
-        <div class="section publications">
+        <div id="publications" class="section publications fading">
             <div class="title">Publications</div>
 
             <div class="information">
-                <span class="info-title">2018</span>
-                <img class="arrow" src="img/arrow.svg"/>
-                <div class="info-description selected">
+                <div class="combo">
+                    <span class="info-title">2018</span>
+                    <img class="arrow" src="img/arrow.svg"/>
+                </div>
+                <div class="info-description readingselected">
                     <span class="authors">Arce-McShane F, Sessle BJ, Ross CF, Hatsopoulos NG.</span>
                     <span class="paper-title">Primary sensorimotor cortex exhibits complex dependencies of spike-field coherence on neuronal firing rates, field power, and behavior.</span>
                     <span class="journal">J Neurophysiol. (2018) Mar 28. doi: 10.1152/jn.00037.2018.</span>
                 </div>
-                <div class="info-description selected">
+                <div class="info-description readingselected">
                     <span class="authors">Safavi S, Dwarakanath A, Kapoor V, Werner J, Hatsopoulos NG, Logothetis NK, Panagiotaropoulos TI.</span>
                     <span class="paper-title">Nonmonotonic spatial structure of interneuronal correlations in prefrontal microcircuits. </span>
                     <span class="journal">Proc Natl Acad Sci (2018) Mar 27. pii: 201802356. doi: 10.1073/pnas.1802356115.</span>
                 </div>
-                <div class="info-description selected">
+                <div class="info-description readingselected">
                     <span class="authors">Vaidya M, Balasubramanian K, Southerland J, Badreldin I, Eleryan A, Shattuck K, Gururangan S, Slutzky M, Osborne L, Fagg A, Oweiss K, Hatsopoulos NG.</span>
                     <span class="paper-title">Emergent coordination underlying learning to reach to grasp with a brain-machine interface.</span>
                     <span class="journal">J Neurophysiol. (2018) 119: 1291–1304. doi: doi:10.1152/jn.00982.2016.</span>
@@ -220,8 +237,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2017</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2017</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -230,8 +249,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2016</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2016</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -240,8 +261,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2015</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2015</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -250,8 +273,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2014</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2014</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -260,8 +285,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2013</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2013</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -270,8 +297,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2012</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2012</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -280,8 +309,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2011</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2011</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -290,8 +321,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2010</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2010</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -300,8 +333,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2009</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2009</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -310,8 +345,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2008</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2008</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -320,8 +357,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2007</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2007</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -330,8 +369,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2006</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2006</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -340,8 +381,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2005</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2005</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -350,8 +393,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2004</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2004</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -360,8 +405,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2003</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2003</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -370,8 +417,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2002</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2002</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -380,8 +429,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">2001</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">2001</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -390,8 +441,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1999</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1999</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -400,8 +453,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1998</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1998</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -410,8 +465,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1996</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1996</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -420,8 +477,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1995</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1995</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -430,8 +489,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1994</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1994</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -440,8 +501,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1991</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1991</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>  
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -450,8 +513,10 @@
             </div>
 
             <div class="information puboff">
-                <span class="info-title">1989</span>
-                <img class="arrow" src="img/arrow.svg"/>
+                <div class="combo">
+                    <span class="info-title">1989</span>
+                    <img class="arrow up" src="img/arrow.svg"/>
+                </div>
                 <div class="info-description">
                     <span class="authors"></span>
                     <span class="paper-title"></span>
@@ -460,32 +525,32 @@
             </div>
         </div>
 
-        <div class="section links">
+        <div id="links" class="section links fading">
             <div class="title">Links</div>
             <div class="link-container">
                 <div class="link-section">
                     <div class="link-title name">Collaborators</div>
-                    <span class="link">Jason MacLean</span>
-                    <span class="link">Sliman Bensmaia</span>
-                    <span class="link">Calum Ross</span>
-                    <span class="link">Karim Oweiss</span>
-                    <span class="link">Andy Fagg</span>
-                    <span class="link">Barry Sessle</span>
+                    <span class="link"><a href="http://macleanlab.com/" target="_blank">Jason MacLean</a></span>
+                    <span class="link"><a href="http://bensmaialab.org" target="_blank">Sliman Bensmaia</a></span>
+                    <span class="link"><a href="https://pondside.uchicago.edu/oba/faculty/ross_c.html" target="_blank">Calum Ross</a></span>
+                    <span class="link"><a href="https://www.ece.ufl.edu/users/oweiss-karim" target="_blank">Karim Oweiss</a></span>
+                    <span class="link"><a href="http://www.cs.ou.edu/~fagg/" target="_blank">Andy Fagg</a></span>
+                    <span class="link"><a href="http://www.physiology.utoronto.ca/content/barry-j-sessle/" target="_blank">Barry Sessle</a></span>
                 </div>
 
                 <div class="link-section">
-                    <div class="link-title name">University of Chicago</div>
-                    <span class="link">University Homepage</span>
-                    <span class="link">Department of Organismal Biology &amp; Anatomy</span>
-                    <span class="link">Department of Psychology</span>
-                    <span class="link">Neuroscience at the University of Chicago</span>
-                    <span class="link">Committee on Computational Neuroscience</span>
-                    <span class="link">Committee on Neurobiology</span>
+                    <div class="link-title name"><a href="">University of Chicago</a></div>
+                    <span class="link"><a href="https://www.uchicago.edu" target="_blank">University Homepage</a></span>
+                    <span class="link"><a href="https://pondside.uchicago.edu/oba/" target="_blank">Department of Organismal Biology &amp; Anatomy</a></span>
+                    <span class="link"><a href="https://psychology.uchicago.edu" target="_blank">Department of Psychology</a></span>
+                    <span class="link"><a href="https://neuroscience.uchicago.edu" target="_blank">Neuroscience at the University of Chicago</a></span>
+                    <span class="link"><a href="https://neuroscience.uchicago.edu/computational-neuroscience" target="_blank"> Committee on Computational Neuroscience</a></span>
+                    <span class="link"><a href="https://neuroscience.uchicago.edu/neurobiology" target="_blank">Committee on Neurobiology</a></span>
                 </div>
             </div>
         </div>
 
-        <div class="section contact">
+        <div id="contact" class="section contact fading">
             <div class="title">Contact</div>
             <div class="contact-container">
                 <div class="contact-email">nicho@uchicago.edu</div>
@@ -510,13 +575,10 @@
             
         </div>
 
-        
+        <div class="perm-shadow">
+            Hatsopoulos
+        </div>
       
-    
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
     </body>
 </html>
 
