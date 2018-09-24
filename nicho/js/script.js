@@ -66,8 +66,8 @@ $(document).ready(function(){
             currentPage = "#" + $(this).attr('id') + "n";
             currentBrain = "#" + $(this).attr('id') + "b";
             
-            var top = $(this).offset().top - $(this).height()*0.25;
-            var bottom = $(this).offset().top + $(this).height() - $(this).height()*0.25;
+            var top = $(this).offset().top - 1;
+            var bottom = $(this).offset().top + $(this).height() - 1;
             if (scroll < bottom && scroll > top) {
                 $('.brain-title').css("opacity", "0");
                 $('.innerbrain').css("opacity", "0");
@@ -179,7 +179,7 @@ $(document).ready(function(){
         $(".small-person").removeClass("chosen");
         $(this).addClass("chosen");
 
-        $(".name").html(people[$(this).attr("id")][0]);
+        $("#pname").html(people[$(this).attr("id")][0]);
         $("#title").html(people[$(this).attr("id")][1]);
         $("#email").html(people[$(this).attr("id")][2]);
         $("#email").attr("href", "mailto:" + people[$(this).attr("id")][2]);
