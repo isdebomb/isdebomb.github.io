@@ -141,24 +141,54 @@ $(document).ready(function(){
         $(this).siblings().each(function() {
             if($(this).is("p")) {
                 if(state) {
-                    $(this).css("display", "block");
+                    $(this).slideDown(300);
                 } else {
-                    $(this).css("display", "none");
+                    $(this).slideUp(300);
                 }
             }
 
             if($(this).is("div")) {
                 if(state) {
-                    $(this).css("display", "block");
-                    $(this).parent().css("display", "block");
+                    $(this).parent().css("display", "block").delay(300);
+                    $(this).slideDown(300);
                 } else {
-                    $(this).css("display", "none");
+                    $(this).slideUp(300).delay(600);
                     $(this).parent().css("display", "inline-block");
                 }
-
-                
             }
         });
     });
+
+    var people = {
+        "nicho" : ['Nicholas Hatsopoulos, Ph.D.', 'Principal Investigator', 'nicho@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "rebecca" : ['Rebecca Junod, B.S.', 'Lab Manager', 'junodrm@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "fritzie" : ['Fritzie Arce-McShane, Ph.D.', 'Placeholder', 'fritziea@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "carrie" : ['Carrie Balcer, B.S.', 'Placeholder', 'cabalcer@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "karthikeyan" : ['Karthikeyan Balasubramanian', 'Placeholder', 'karthikeyanb@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "jeff" : ['Jeff Walker, Ph.D.', 'Placeholder', 'walkerjd@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "vasileios" : ['Vasileios Papadourakis, Ph.D.', 'Placeholder', 'vpapadourakis@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "alex" : ['Alex Lee', 'Placeholder', 'leealex@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "marina" : ['Marina Sundiang', 'Placeholder', 'sundiang@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "wei" : ['Wei Liang', 'Placeholder', 'weiliang@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "dalton" : ['Dalton Moore', 'Placeholder', 'daltonm@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "caleb" : ['Caleb Sponheim', 'Placeholder', 'calebsponheim@uchicago.edu', 'bio', '/img/bigpic', ''],
+        "george" : ['George Saieed', 'Undergrad Research Assistant', 'gs@georgesaieed.com', 'bio', '/img/bigpic', '']
+    }
+
+    $(".small-person").click(function(e) {
+        $(".small-person").removeClass("chosen");
+        $(this).addClass("chosen");
+
+        $(".name").html(people[$(this).attr("id")][0]);
+        $("#title").html(people[$(this).attr("id")][1]);
+        $("#email").html(people[$(this).attr("id")][2]);
+        $("#email").attr("href", "mailto:" + people[$(this).attr("id")][2]);
+        $(".bio").html(people[$(this).attr("id")][3]);
+        $(".big-person").css("background-image", "url(\"" + people[$(this).attr("id")][4] + "\")");
+        $("#extra-link").html(people[$(this).attr("id")][5]);
+        $("#extra-link").attr("href", people[$(this).attr("id")][5]);
+    });
+
+    
 
 });
