@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    window.alert("updated 4:11PM on 10/25");
+    minheight = $(window).height;
+    $(".section").css("min-height", minheight + "px");
+
     var type = window.location.hash.substr(1);
     if (type == "thanks") {
         $(".thanks").fadeTo(500, 1);
