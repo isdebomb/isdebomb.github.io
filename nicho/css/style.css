@@ -585,19 +585,19 @@ a {
 
 @media (min-height:600px) and (max-width: 400px) {
     .perm-shadow {
-        top: 320px;
+        top: 280px;
         font-size: 50px;
         left: 36px;
     }
 
     .main-name {
-        top: 92%;
-        left: -2px;
+        top: 76%;
+        left: -3px;
         font-size: 35px;
     }
 
     .shadow {
-        font-size: 120px;
+        font-size: 100px;
     }
 
     .summary {
