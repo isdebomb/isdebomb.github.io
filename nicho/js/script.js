@@ -200,6 +200,17 @@ $(document).ready(function(){
         $("#extra-link").attr("href", "http://" + people[$(this).attr("id")][5]);
     });
 
+    $(".hamburger").click(function() {
+        $(".mob-navbar").slideDown(300);
+    });
+
+    $(".hamburgerin").click(function() {
+        $(".mob-navbar").slideUp(300);
+    });
+
+    $(".mobnavbox").click(function() {
+        $(".mob-navbar").slideUp(300);
+    });
     
 
 });
