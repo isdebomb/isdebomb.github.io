@@ -206,6 +206,14 @@ a {
     margin-top: 100px;
 }
 
+#dalton {
+    background-image: url('../img/people/dalton-thumb.jpg');
+}
+
+#caleb {
+    background-image: url('../img/people/caleb-thumb.jpg');
+}
+
 .small-person {
     padding: 10px;
     box-sizing: border-box;
@@ -213,9 +221,8 @@ a {
     width: 80px;
     margin-right: 20px;
     border-radius: 100px;
-    border: solid 1px black;
     display: inline-block;
-    background: #CFCFCF;
+    background-size: cover;
     cursor: pointer;
     transition: border-width 0.2s;
     margin-bottom: 20px;

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.alert("updated 12:42PM on 10/26");
+    window.alert("updated 4:53PM on 10/26");
     minheight = $(window).height;
     $(".section").css("min-height", minheight + "px");
 
@@ -176,18 +176,18 @@ $(document).ready(function(){
     });
 
     var people = {
-        "nicho" : ['Nicholas Hatsopoulos, Ph.D.', 'Principal Investigator', 'nicho@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "rebecca" : ['Rebecca Junod, B.S.', 'Lab Manager', 'junodrm@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "carrie" : ['Carrie Balcer, B.S.', 'Placeholder', 'cabalcer@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "karthikeyan" : ['Karthikeyan Balasubramanian, Ph.D.', 'Placeholder', 'karthikeyanb@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "jeff" : ['Jeff Walker, Ph.D.', 'Placeholder', 'walkerjd@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "vasileios" : ['Vasileios Papadourakis, Ph.D.', 'Placeholder', 'vpapadourakis@uchicago.edu', 'bio', '/img/bigpic', 'Google Scholar Profile', ''],
-        "alex" : ['Alex Lee, M.S.', 'Placeholder', 'leealex@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "marina" : ['Marina Sundiang, B.S.', 'Placeholder', 'sundiang@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "wei" : ['Wei Liang, M.S.', 'Placeholder', 'weiliang@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "dalton" : ['Dalton Moore, B.S.', 'Placeholder', 'daltonm@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "caleb" : ['Caleb Sponheim, B.S.', 'Placeholder', 'calebsponheim@uchicago.edu', 'bio', '/img/bigpic', '', ''],
-        "george" : ['George Saieed', 'Undergrad Research Assistant', 'gs@georgesaieed.com', 'bio', '/img/bigpic', 'Personal Site', 'http://georgesaieed.com']
+        "nicho" : ['Nicholas Hatsopoulos, Ph.D.', 'Principal Investigator', 'nicho@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "rebecca" : ['Rebecca Junod, B.S.', 'Lab Manager', 'junodrm@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "carrie" : ['Carrie Balcer, B.S.', 'Placeholder', 'cabalcer@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "karthikeyan" : ['Karthikeyan Balasubramanian, Ph.D.', 'Placeholder', 'karthikeyanb@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "jeff" : ['Jeff Walker, Ph.D.', 'Placeholder', 'walkerjd@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "vasileios" : ['Vasileios Papadourakis, Ph.D.', 'Placeholder', 'vpapadourakis@uchicago.edu', 'bio', './img/bigpic', 'Google Scholar Profile', ''],
+        "alex" : ['Alex Lee, M.S.', 'Placeholder', 'leealex@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "marina" : ['Marina Sundiang, B.S.', 'Placeholder', 'sundiang@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "wei" : ['Wei Liang, M.S.', 'Placeholder', 'weiliang@uchicago.edu', 'bio', './img/bigpic', '', ''],
+        "dalton" : ['Dalton Moore, B.S.', 'Placeholder', 'daltonm@uchicago.edu', 'bio', './img/people/dalton.jpg', '', ''],
+        "caleb" : ['Caleb Sponheim, B.S.', 'Placeholder', 'calebsponheim@uchicago.edu', 'bio', './img/people/caleb.jpg', '', ''],
+        "george" : ['George Saieed', 'Undergrad Research Assistant', 'gs@georgesaieed.com', 'bio', './img/bigpic', 'Personal Site', 'http://georgesaieed.com']
     }
 
     $(".small-person").click(function(e) {
@@ -199,7 +199,7 @@ $(document).ready(function(){
         $("#email").html(people[$(this).attr("id")][2]);
         $("#email").attr("href", "mailto:" + people[$(this).attr("id")][2]);
         $(".bio").html(people[$(this).attr("id")][3]);
-        $(".big-person").css("background-image", "url(\"" + people[$(this).attr("id")][4] + "\")");
+        $(".big-person").css("background-image", "url(" + people[$(this).attr("id")][4] + ")");
         $("#extra-link").html(people[$(this).attr("id")][5]);
         $("#extra-link").attr("href", people[$(this).attr("id")][6]);
     });
