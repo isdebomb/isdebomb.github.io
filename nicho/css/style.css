@@ -292,6 +292,7 @@ a {
 
 .aninput {
     border: none;
+    border-radius: 0px !important;
     border-bottom: solid 1px #979797;
     display: inline-block;
     font-size: 25px;
@@ -333,7 +334,7 @@ a {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
-    border-radius: 0px;
+    border-radius: 0px !important;
 }
 
 .address-container {
@@ -889,8 +890,12 @@ a {
 }
 
 @media (max-width: 455px) {
-    .formname, .email {
-        width: 100%;
+    .formname, .email, .message {
+        width: 90%;
+    }
+
+    .submit {
+        margin-right: 25px;
     }
 
     .formname {
