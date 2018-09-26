@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.alert("updated 4:11PM on 10/25");
+    window.alert("updated 11:10AM on 10/26");
     minheight = $(window).height;
     $(".section").css("min-height", minheight + "px");
 

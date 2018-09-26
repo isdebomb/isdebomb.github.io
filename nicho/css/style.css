@@ -299,7 +299,6 @@ a {
     font-family: 'Nunito';
     font-weight: 100;
     background: none;
-
 }
 
 .formname, .email {
@@ -321,7 +320,7 @@ a {
 }
 
 .formname {
-    margin-right: 19%;
+    margin-right: 18%;
 }
 
 .submit {
@@ -334,6 +333,7 @@ a {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    border-radius: 0px;
 }
 
 .address-container {
@@ -834,4 +834,94 @@ a {
         margin-top: 30px;
     }
 }
+
+@media (max-width: 1315px) {
+    .address-container {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1177px) {
+    .address-container {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .contact-form{
+        width: 55%;
+    }
+}
+
+@media (max-width: 841px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    .address-container {
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 682px) {
+    .contact-email {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 6562px) {
+    .contact-email {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 498px) {
+    .formname, .email {
+        width: 47%;
+    }
+
+    .formname {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 455px) {
+    .formname, .email {
+        width: 100%;
+    }
+
+    .formname {
+        margin-bottom: 20px;
+    }
+
+    .email {
+        margin-bottom: 20px;
+    }
+
+    .aninput {
+        font-size: 20px;
+    }
+
+    .address {
+        font-size: 20px;
+    }
+
+    .nichophone, .studentphone, .labphone, .fax {
+        font-size: 15px;
+    }
+
+    .contact-email {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 392px) {
+    .contact-email {
+        font-size: 25px;
+    }
+}
+
 
