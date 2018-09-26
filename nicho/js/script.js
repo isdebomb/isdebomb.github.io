@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.alert("updated 11:40AM on 10/26");
+    window.alert("updated 12:03PM on 10/26");
     minheight = $(window).height;
     $(".section").css("min-height", minheight + "px");
 
@@ -20,8 +20,8 @@ $(document).ready(function(){
             currentPage = "#" + $(this).attr('id') + "n";
             currentBrain = "#" + $(this).attr('id') + "b";
             
-            var top = $(this).offset().top - 1;
-            var bottom = $(this).offset().top + $(this).height() - 1;
+            var top = $(this).offset().top - 51;
+            var bottom = $(this).offset().top + $(this).height() - 51;
             if (scroll < bottom && scroll > top) {
                 $('.brain-title').css("opacity", "0");
                 $('.innerbrain').css("opacity", "0");
@@ -75,8 +75,8 @@ $(document).ready(function(){
                 currentPage = "#" + $(this).attr('id') + "n";
                 currentBrain = "#" + $(this).attr('id') + "b";
                 
-                var top = $(this).offset().top - 1;
-                var bottom = $(this).offset().top + $(this).height() - 1;
+                var top = $(this).offset().top - 51;
+                var bottom = $(this).offset().top + $(this).height() - 51;
                 if (scroll < bottom && scroll > top) {
                     $('.brain-title').css("opacity", "0");
                     $('.innerbrain').css("opacity", "0");
