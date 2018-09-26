@@ -929,4 +929,25 @@ a {
     }
 }
 
+@media (max-width: 883px) {
+    .thanks {
+        height: 130px;
+    }
+}
+
+@media (max-width: 500px) {
+    .thanks {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .thank-title {
+        font-size: 25px;
+    }
+    
+    .thank-description {
+        font-size: 15px;
+    }
+}
+
 
