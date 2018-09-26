@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    window.alert("updated 11:10AM on 10/26");
+    window.alert("updated 11:29AM on 10/26");
     minheight = $(window).height;
     $(".section").css("min-height", minheight + "px");
 
@@ -113,12 +113,12 @@ $(document).ready(function(){
         $(".sliding-link").click(function(e) {
             e.preventDefault();
             var aid = $(this).attr("href");
-            $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+            $('html,body').animate({scrollTop: $(aid).offset().top - 50},'slow');
         });
 
         $(".mini-brain").click(function(e) {
             var aid = $(this).attr("href");
-            $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+            $('html,body').animate({scrollTop: $(aid).offset().top - 50},'slow');
         });
     }
 
