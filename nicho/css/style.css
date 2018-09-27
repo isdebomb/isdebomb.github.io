@@ -269,6 +269,11 @@ a {
     background-size: cover;
 }
 
+.news3 {
+    background: url('../img/news/news3.png');
+    background-size: cover;
+}
+
 .paper-title {
     display: block;
     font-weight: 600;
