@@ -14,8 +14,8 @@ a {
     width: 60%;
 }
 
-.weeknum {
-    margin-right: 10px;
+.zaweek {
+    display: none;
 }
 
 .week-1, .week-2 {
@@ -104,6 +104,14 @@ h2 {
     text-align: center;
     display: block;
     width: 100%;
+}
+
+.weeklink {
+    margin-right: 10px;
+}
+
+.selected {
+    display: block;
 }
 
 @media (max-width: 1236px) {
