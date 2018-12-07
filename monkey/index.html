@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monkey Monitor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Righteous|Cabin+Sketch:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	    <script defer src="js/script.js"></script>
+    </head>
+    <body>
+       <div class="menu">
+           <div class="top topleft">
+                <img class="monkey" src="img/monkey.svg"/>
+                <span class="mm">Monkey Monitor</span>
+           </div>
+           <div class="bottom bottomleft">
+                <div class="monkeylabel">
+                    <div class="status green"></div>
+                    <div class="monkeyname">
+                        <div class="monkeynametext selected">
+                            Leon
+                        </div>
+                    </div>
+                </div>
+                <div class="monkeylabel">
+                    <div class="status red"></div>
+                    <div class="monkeyname">
+                        <div class="monkeynametext">
+                            Patrick
+                        </div>
+                    </div>
+                </div>
+                <div class="monkeylabel">
+                    <div class="status red"></div>
+                    <div class="monkeyname">
+                        <div class="monkeynametext">
+                            Jeff
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div><!--
+    --><div class="rest">
+            <div class="top topright">
+                <div class="view">View: </div>
+                <div class="monkeybutton green">
+                    by monkey
+                </div>
+                <div class="daybutton">
+                    by day
+                </div>
+            </div>
+            <div class="bottom bottomright">
+                <div class="infoblock greenborder">
+                    <div class="topleftinfo">
+                        in hammock?
+                    </div>
+                    <div class="middleinfo greentext">
+                        YES
+                    </div>
+                    <div class="bottomrightinfo">
+                        for <strong>1h 25m</strong>
+                    </div>
+                </div>
+                <div class="infoblock">
+                    <div class="topleftinfo">
+                        today's weight
+                    </div>
+                    <div class="middleinfo">
+                        9.03<span class="units">oz</span>
+                    </div>
+                    <div class="bottomrightinfo">
+                        at <strong>4:35 PM</strong>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </body>
+</html>

@@ -1,0 +1,174 @@
+/* General Structure */
+html, body {
+  padding: 0;
+  margin: 0;
+  color: black;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.menu {
+    height: 100%;
+    width: 15vw;
+    border-left: solid 1px #C1C1C1;
+    border-right: solid 1px #C1C1C1;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+}
+
+.rest {
+    height: 100%;
+    width: 85vw;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.top {
+    border-bottom: solid 1px #C1C1C1;
+    height: 55px;
+    box-sizing: border-box;
+}
+
+.topleft {
+    text-align: center;
+    position: relative;
+}
+
+.mm {
+    font-family: 'Cabin Sketch';
+    position: absolute;
+    top: 17px;
+    width: 100%;
+    left: 18px;
+    font-size: 15px;
+}
+
+.monkey {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 16px;
+    left: 30px;
+}
+
+.bottom {
+    height: 100%;
+}
+
+.bottomright {
+    background: #F9F9F9;
+    padding: 25px;
+}
+
+.bottomleft {
+    padding-top: 10px;
+}
+
+.monkeylabel {
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.status {
+    position: absolute;
+    left: -5px;
+    top: 16px;
+    height: 10px;
+    width: 10px;
+}
+
+.monkeyname {
+    position: absolute;
+    left: 30px;
+    top: 12px;
+    font-size: 14px;
+}
+
+.monkeynametext {
+    padding-bottom: 5px;
+    width: 155px;
+    font-weight: 200;
+}
+
+.green {
+    background: #19BC69;
+}
+
+.red {
+    background: #BC1919;
+}
+
+.selected {
+    font-weight: 400;
+    border-bottom: solid 1px black;
+}
+
+.view, .monkeybutton, .daybutton {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.view {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.monkeybutton, .daybutton {
+    padding: 8px 10px 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.monkeybutton {
+    color: white;
+}
+
+.infoblock {
+    font-size: 13px;
+    background: white;
+    border: solid 1px #999999;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    width: 275px;
+    height: 95px;
+    margin-right: 25px;
+}
+
+.topleftinfo {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+}
+
+.bottomrightinfo {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.middleinfo {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 200;
+    margin-top: 17px;
+}
+
+.greentext {
+    color: #19BC69;
+}
+
+.greenborder {
+    border: solid 1px #19BC69;
+}
+
+.units {
+    font-size: 30px;
+}
