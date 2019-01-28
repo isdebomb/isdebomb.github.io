@@ -206,12 +206,48 @@ a {
     margin-top: 100px;
 }
 
+#nicho {
+    background-image: url('../img/people/nicho-thumb.jpg');
+}
+
+#rebecca {
+    background-image: url('../img/people/rebecca-thumb.jpg');
+}
+
+#karthikeyan {
+    background-image: url('../img/people/karthikeyan-thumb.jpg');
+}
+
+#jeff {
+    background-image: url('../img/people/jeff-thumb.jpg');
+}
+
+#vasileios {
+    background-image: url('../img/people/vasileios-thumb.jpg');
+}
+
+#alex {
+    background-image: url('../img/people/alex-thumb.png');
+}
+
+#marina {
+    background-image: url('../img/people/marina-thumb.jpg');
+}
+
+#wei {
+    background-image: url('../img/people/wei-thumb.jpg');
+}
+
 #dalton {
     background-image: url('../img/people/dalton-thumb.jpg');
 }
 
 #caleb {
     background-image: url('../img/people/caleb-thumb.jpg');
+}
+
+#george {
+    background-image: url('../img/people/george-thumb.jpeg');
 }
 
 .small-person {
@@ -448,6 +484,12 @@ a {
 
 #home {
     overflow-x: hidden;
+}
+
+@media(max-width: 1302px) {
+    .people-nav {
+        text-align: left;
+    }
 }
 
 @media (max-width: 1178px) {

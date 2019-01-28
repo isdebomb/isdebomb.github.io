@@ -176,18 +176,23 @@ $(document).ready(function(){
     });
 
     var people = {
-        "nicho" : ['Nicholas Hatsopoulos, Ph.D.', 'Principal Investigator', 'nicho@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "rebecca" : ['Rebecca Junod, B.S.', 'Lab Manager', 'junodrm@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "carrie" : ['Carrie Balcer, B.S.', 'Placeholder', 'cabalcer@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "karthikeyan" : ['Karthikeyan Balasubramanian, Ph.D.', 'Placeholder', 'karthikeyanb@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "jeff" : ['Jeff Walker, Ph.D.', 'Placeholder', 'walkerjd@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "vasileios" : ['Vasileios Papadourakis, Ph.D.', 'Placeholder', 'vpapadourakis@uchicago.edu', 'bio', './img/bigpic', 'Google Scholar Profile', ''],
-        "alex" : ['Alex Lee, M.S.', 'Placeholder', 'leealex@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "marina" : ['Marina Sundiang, B.S.', 'Placeholder', 'sundiang@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "wei" : ['Wei Liang, M.S.', 'Placeholder', 'weiliang@uchicago.edu', 'bio', './img/bigpic', '', ''],
-        "dalton" : ['Dalton Moore, B.S.', 'Placeholder', 'daltonm@uchicago.edu', 'bio', './img/people/dalton.jpg', '', ''],
-        "caleb" : ['Caleb Sponheim, B.S.', 'Placeholder', 'calebsponheim@uchicago.edu', 'bio', './img/people/caleb.jpg', '', ''],
-        "george" : ['George Saieed', 'Undergrad Research Assistant', 'gs@georgesaieed.com', 'bio', './img/bigpic', 'Personal Site', 'http://georgesaieed.com']
+        "nicho" : ['Nicholas Hatsopoulos, Ph.D.', 'Principal Investigator', 'nicho@uchicago.edu', `Nicholas G. “Nicho”  Hatsopoulos, Ph.D. is currently a Professor at the University of Chicago. Dr. Hatsopoulos was also Chairman of the Computational Neuroscience graduate program from 2008-2015. He is currently running a laboratory with five graduate students, three postdoctoral fellows, and several technicians which is funded in part by the National Institutes of Health.  From January 1998 to December 2001, Dr. Hatsopoulos was an Assistant Professor of Research in the Department of Neuroscience at Brown University. Dr. Hatsopoulos completed two postdoctoral research fellowships, one in the Department of Neuroscience at Brown University and the other in the Computational Neuroscience Program at the California Institute of Technology. <br><br>
+
+        Dr. Hatsopoulos completed his B.A. in Physics from Williams College in 1984, his M.S. in Psychology in 1991 and his Ph.D. in Cognitive Science from Brown University in 1992. <br><br>
+        
+        In 2001, he co-founded a company, Cyberkinetics Neurotechnology Systems, which took the basic scientific research he and his colleagues conducted to develop neural prosthesis technology to assist people with severe motor disabilities. <br><br>
+        
+        His research focuses on the neural basis of motor control and learning. He is investigating what features of motor behavior are encoded and how this information is represented in the collective activity of neuronal ensembles in the motor cortex. He is also interested in how these representations change as motor learning occurs.  To answer these questions, the electrical discharge of many motor cortical neurons is simultaneously recorded using multi-electrode arrays and correlated with motor behavior. The encoding properties of individual motor cortical neurons are being studied to determine how these single cell properties relate to higher-order representations involving groups of neurons. The possibility that changes in functional connectivity among neurons may occur during motor learning is also being explored.`, './img/people/nicho.jpg', '', ''],
+        "rebecca" : ['Rebecca Junod, B.S.', 'Lab Manager', 'junodrm@uchicago.edu', 'bio', './img/people', '', ''],
+        "karthikeyan" : ['Karthikeyan Balasubramanian, Ph.D.', 'Placeholder', 'karthikeyanb@uchicago.edu', 'bio', './img/people', '', ''],
+        "jeff" : ['Jeff Walker, Ph.D.', 'Placeholder', 'walkerjd@uchicago.edu', 'Jeff defended his PhD in July 2018 after developing methods for studying the cortical contributions to motor control with marmosets engaging in unconstrained natural behaviors.', './img/people/jeff.jpg', '', ''],
+        "vasileios" : ['Vasileios Papadourakis, Ph.D.', 'Postdoctoral Scholar', 'vpapadourakis@uchicago.edu', 'My interests are broadly in the field of motor control with a focus on the sensory capabilities of the motor system and its role in perception. My research is driven by two kinds of questions: First, how is visual and somatosensory information represented and utilized by the motor system to prepare, initiate, monitor and control movement. Second, what is the nature and significance of the motor system’s visual responses during action observation. My BSc is in Applied Mathematics and my M.S. in the Brain and Mind Sciences. For my PhD, I studied the functional properties of primate premotor cortex during execution and observation of grasping actions.', './img/people', 'Google Scholar Profile', 'https://scholar.google.com/citations?user=vWdfch8AAAAJ&hl=en'],
+        "alex" : ['Alex Lee, M.S.', 'Placeholder', 'leealex@uchicago.edu', 'bio', './img/people/alex.png', '', ''],
+        "marina" : ['Marina Sundiang, B.S.', 'Placeholder', 'sundiang@uchicago.edu', 'Marina Sundiang is a PhD Candidate in computational neuroscience studying motor learning in marmosets.', './img/people/marina.jpg', '', ''],
+        "wei" : ['Wei Liang, M.S.', 'Placeholder', 'weiliang@uchicago.edu', 'Wei Liang is a PhD Candidate at the University of Chicago.', './img/people/wei.jpg', '', ''],
+        "dalton" : ['Dalton Moore, B.S.', 'Graduate Student', 'daltonm@uchicago.edu', 'Dalton is a PhD student in the Computational Neuroscience program. He completed a Bachelor\'s and a Master\'s Degree in Biomedical Engineering at Arizona State University. He is interested in the fundamental operations computed by motor cortical circuits, and particularly the functional connectivity patterns that produce these computations at the local and macro-scale.', './img/people/dalton.jpg', '', ''],
+        "caleb" : ['Caleb Sponheim, B.S.', 'Graduate Student', 'calebsponheim@uchicago.edu', 'Caleb Sponheim is trying to understand how the brain learns, plans and executes movements. He leverages those findings to improve the experience of using brain-machine interfaces, which help restore function to people who have disabilities.', './img/people/caleb.jpg', 'Personal Site', 'http://www.calebsponheim.com/'],
+        "george" : ['George Saieed', 'Undergrad Research Assistant', 'gs@georgesaieed.com', 'bio', './img/people/george.jpeg', 'Personal Site', 'http://georgesaieed.com']
     }
 
     $(".small-person").click(function(e) {
